@@ -1,0 +1,65 @@
+@use "../mixins/responsive.scss" as *;
+
+.quote {
+  margin-left: 3rem;
+  margin-top: 5rem;
+
+  @include responsive(laptop) {
+    margin-left: 11.5rem;
+  }
+}
+
+.profiles {
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #202a3c;
+  margin: 2rem;
+  margin-top: -1rem;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 10px;
+
+  &__text {
+    font-size: 0.85rem;
+  }
+  &__person {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+  &__person-photo {
+    border: 1px solid white;
+    border-radius: 20rem;
+    max-width: 60%;
+    max-height: 60%;
+    margin-top: 1rem;
+    @include responsive(laptop) {
+      max-width: 70%;
+      max-height: 70%;
+    }
+  }
+  &__person-name {
+    font-size: 0.7rem;
+    margin-left: -4rem;
+    margin-top: 1rem;
+    @include responsive(laptop) {
+      margin-left: 0;
+    }
+  }
+
+  &__person-name2 {
+    font-weight: bold;
+  }
+
+  &__person-name3 {
+  }
+}

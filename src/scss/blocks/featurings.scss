@@ -1,0 +1,24 @@
+@use "../mixins/responsive.scss" as *;
+
+.featurings {
+  margin-top: 25rem;
+  @include responsive(laptop) {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 220px 220px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30rem;
+    gap: 8rem;
+    row-gap: 5rem;
+  }
+}
+
+.featuring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}

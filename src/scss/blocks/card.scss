@@ -1,0 +1,49 @@
+
+@use '../mixins/responsive.scss' as *;
+
+.card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 3rem;
+    padding: 2rem;
+    @include responsive(laptop){
+        flex-direction: row;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+
+&__content{
+    display: flex;
+    flex-direction: column;
+    @include responsive(laptop){
+        margin-top: 3rem;
+        margin-left: 8rem;
+    }
+}
+&__title{
+    font-size: 1.3rem;
+    @include responsive(laptop){
+        font-size: 2rem;
+    }
+}
+&__text{
+    font-size: 0.9rem;
+    padding-top: 0;
+    margin-top: 0;
+    @include responsive(laptop){
+        font-size: 1rem;
+    }
+}
+&__button{
+    font-size: 0.9rem;
+    color: #62E0D9;
+    border-bottom: 1px solid #62E0D9;
+    width: 7.5rem;
+    @include responsive(laptop){
+        font-size: 1rem;
+        width: 8.2rem;
+    }
+}
+}

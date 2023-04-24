@@ -1,0 +1,59 @@
+@use "../mixins/responsive.scss" as *;
+
+.access {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #1b2330;
+  color: white;
+  align-items: center;
+  text-align: center;
+  @include responsive(laptop) {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  &__title {
+    @include responsive(laptop) {
+      font-size: 3rem;
+    }
+  }
+  &__text {
+  }
+  &__form {
+  }
+  &__mail {
+    height: 50px;
+    width: 280px;
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+
+    @include responsive(laptop) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1rem;
+    }
+  }
+  &__start {
+    height: 50px;
+    width: 280px;
+    background-color: #63e1d9;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+
+    @include responsive(laptop) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
