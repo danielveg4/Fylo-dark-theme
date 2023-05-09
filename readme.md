@@ -1,10 +1,10 @@
 # Fylo Dark Theme
 
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://github.com/danielveg4/Fylo-dark-theme/blob/main/Captura%20de%20Pantalla%202023-05-09%20a%20las%2016.28.31.png?raw=true)
 
 ## Ejemplo en vivo
 
-- [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto)
+- [URL-de-github-pages-de-este-proyecto](https://danielveg4.github.io/Fylo-dark-theme/)
 
 ## Descripción 📑
 
