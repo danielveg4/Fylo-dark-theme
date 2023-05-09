@@ -1,1 +1,58 @@
-/* ESTILOS DEL FOOTER */
+@use "../mixins/responsive.scss" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  &__logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    @include responsive(laptop) {
+      margin-bottom: 6rem;
+    }
+  }
+  &__contact {
+    @include responsive(laptop) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__contactlocation {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    @include responsive(laptop) {
+      text-align: left;
+      width: 35%;
+    }
+  }
+  &__contacttlf {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    @include responsive(laptop) {
+      text-align: left;
+      width: 35%;
+    }
+  }
+  &__contactmail {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    @include responsive(laptop) {
+      text-align: left;
+      width: 35%;
+    }
+  }
+}
